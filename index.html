@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="./images/logo.svg" alt="">
+            <input id="search_input" class="header__input" type="text" placeholder="Search books...">
+            <button id="search_btn" class="btn btn-primary btn-lg py-0 header__btn" type="submit" onclick="">Search</button>
+            <button id="start_btn" class="btn btn-success btn-lg py-0 header__btn" type="submit" onclick="">Speak</button>
+            <button id="admin" class="btn btn-warning btn-lg py-0 header__btn" type="submit" onclick="">Admin</button>
+            <button id="signOut" class="btn btn-danger btn-lg py-0 header__btn" type="submit" onclick="signOut()">Logout</button>
+        </div>
+    </header>
+    <main>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-white border">
+            <div class="container nav_con">
+                <p class="mx-5" >Showing 10 Result(s)</p>
+                <button id="order" class="btn  btn-lg  py-0" type="submit" onclick="">Order by newest</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <section class="leftPart">
+                <h1 class="leftPart__title">Bookmarks</h1>
+                <p class="leftPart__text">If you don’t like to read, you haven’t found the right book</p>
+                <div class="cart">
+                    <div class="cart__texts">
+                        <h3 class="cart__title">phyton</h3>
+                        <p class="cart__text">David M. Beazley</p>
+                    </div>
+                    <div class="cart__btns">
+                        <img class="cart__open__modal" id="1" src="./images/book.svg" alt="book">
+                        <img class="cart__delete" id="2" src="./images/delete.svg" alt="delete btn">
+                    </div>
+                </div>
+            </section>
+            <section class="rightPart container">
+                <!-- <div class="box">
+                    <img src="./images/rasm.png" alt="">
+                    <h4 class="box__title">Phyton</h4>
+                    <p class="box__text">David M. Beazley</p>
+                    <p class="box__year">2009</p>
+                    <div class="box__btns">
+                        <button class="btn btn-warning box__button1" type="submit">Bookmark</button>
+                        <button class="btn box__button2" type="submit">More Info</button>
+                        <div class="box__btn">
+                            <button  class="btn btn-secondary my-1  box__button3" type="submit">Read</button>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+        <div class="my__modal">
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <header>
+                    <h3>phyton</h3>
+                </header>
+                <main>
+                    <img src="./images/logo.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus id suscipit incidunt illo sint aspernatur quasi enim, odit soluta numquam laborum quia asperiores impedit officia quod facere vero esse nostrum in pariatur praesentium? Provident aliquam quam molestias consectetur voluptas eligendi perferendis minus eos, voluptatibus blanditiis nostrum iure! Nemo, temporibus.</p>
+                    <p>Author : Jamal Kauhar</p>
+                    <p>Published :  2019</p>
+                    <p>Publishers: Hollman</p>
+                    <p>Categories: Computers</p>
+                    <p>Pages Count: 346</p>
+                </main>
+              </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/login.js"></script> 
+    <script src="./js/script.js"></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/speech.js"></script>
+</body>
+
+</html>

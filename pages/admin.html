@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="../css/main.css" />
+	</head>
+	<body>
+       
+		<div class="container pt-5">
+            <button id="back" class="btn btn-warning  my-1 form-control" type="submit" onclick="">Back</button>
+
+			<form class="form-control" id="add-form">
+				<input
+					name="title"
+					class="form-control mt-3"
+					type="text"
+					placeholder="title"
+				/>
+				<input
+					name="image"
+					class="form-control mt-3"
+					type="file"
+					placeholder="image"
+				/>
+				<input
+					name="author"
+					class="form-control mt-3"
+					type="number"
+					placeholder="author"
+				/>
+				<select class="form-control mt-3" name="category">
+					<option value="fish">Horror</option>
+					<option value="cat">Dramma</option>
+					<option value="horse">Comedy</option>
+					<option value="bird">Action</option>
+				</select>
+				<button
+					id="submit-btn"
+					type="submit"
+					class="btn btn-outline-primary form-control mt-3"
+				>
+					Submit
+				</button>
+			</form>
+		</div>
+
+		
+		<script src="../js/admin.js"></script>
+	</body>
+</html>
