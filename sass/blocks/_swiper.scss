@@ -1,0 +1,114 @@
+.container__right {
+  background: #e5e5e5;
+  display: grid;
+  width: 1000px;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  padding: 40px;
+}
+
+.container__right__card {
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.container__right__card .container__right__card__top {
+  height: 238px;
+}
+
+.img {
+  width: 240px;
+  height: 360px;
+}
+
+.container__right__card__bottom .container__right__card__bottom__top .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  width: 248px;
+}
+
+.container__right__card__bottom .container__right__card__bottom__top .author,
+.year {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+  margin-bottom: 10px;
+  width: 248px;
+}
+
+.img2 {
+  width: 246px;
+  height: 238px;
+}
+
+.btns {
+  display: flex;
+  gap: 6px;
+}
+
+.bookmark-btn {
+  background: #ffd80d;
+  width: 120px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.info-btn {
+  background: rgba(13, 117, 255, 0.05);
+  color: #0d75ff;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.info-btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.read-btn {
+  background: #75828a;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 104px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.read-btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.bookmark-btn:active,
+.info-btn:active,
+.read-btn:active {
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.swiper {
+  margin: 30px 0;
+}
+
+.book__title{
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+}

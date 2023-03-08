@@ -24,24 +24,27 @@
 
 			<form class="form-control" id="add-form">
 				<input
+				id="title"
 					name="title"
 					class="form-control mt-3"
 					type="text"
 					placeholder="title"
 				/>
 				<input
+				id="image"
 					name="image"
 					class="form-control mt-3"
 					type="file"
 					placeholder="image"
 				/>
 				<input
+				id="author"
 					name="author"
 					class="form-control mt-3"
-					type="number"
+					type="text"
 					placeholder="author"
 				/>
-				<select class="form-control mt-3" name="category">
+				<select id="select" class="form-control mt-3" name="category">
 					<option value="fish">Horror</option>
 					<option value="cat">Dramma</option>
 					<option value="horse">Comedy</option>
@@ -49,12 +52,58 @@
 				</select>
 				<button
 					id="submit-btn"
-					type="submit"
+					type=""
 					class="btn btn-outline-primary form-control mt-3"
 				>
 					Submit
 				</button>
+				<button
+					id="getData"
+					type=""
+					class="btn btn-outline-primary form-control mt-3"
+				>
+					Get Data
+				</button>
 			</form>
+
+			
+    <div id="dataContainer"></div>
+    <script>
+      const getDataButton = document.getElementById('getData');
+      const dataContainer = document.getElementById('dataContainer');
+      
+      getDataButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const url2 = 'https://6400834263e89b0913b0b244.mockapi.io/users';
+
+        fetch(url2)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            data.forEach(item => {
+              const h3 = document.createElement('h3');
+              h3.textContent = item.author;
+              dataContainer.appendChild(h3);
+              
+              const img = document.createElement('img');
+              img.src = item.avatar;
+              dataContainer.appendChild(img);
+              
+              const p = document.createElement('p');
+              p.textContent = item.email;
+              dataContainer.appendChild(p); 
+            });
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      });
+    </script>
 		</div>
 
 		

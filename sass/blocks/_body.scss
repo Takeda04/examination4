@@ -1,103 +1,103 @@
-#order{
+#order {
+  color: #fff;
+  background-color: grey;
+}
+.hero {
+  display: flex;
+}
+.rightPart {
+  background-color: rgb(204, 201, 201);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.leftPart {
+  width: 400px;
+  padding: 20px 20px;
+  &__title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+    width: 200px;
+  }
+}
+.nav_con {
+  width: 1120px;
+  margin-left: 280px;
+}
+.cart {
+  width: 218px;
+  height: 72px;
+  background: #f8fafd;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  &__title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    color: #000000;
+  }
+  &__text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+  }
+  &__texts {
+    margin-top: 15px;
+  }
+}
+.box {
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  &__title {
+    height: 30px;
+    overflow: hidden;
+  }
+  &__button2 {
+    color: #0d75ff;
+    background-color: #d7e6f9;
+  }
+  &__button3 {
     color: #fff;
-    background-color: grey;
+    width: 200px;
+  }
+  &__text {
+    color: #757881;
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+  }
+  &__year {
+    color: #757881;
+    font-size: 14px;
+  }
+  &__img {
+    margin-left: 30px;
+  }
 }
-.hero{
-    display: flex;
-}
-.rightPart{
-    background-color: rgb(204, 201, 201);
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 33px;
 
-    
-    
-}
-.leftPart{
-    width: 400px;
-    padding: 20px 20px;
-    &__title{
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-    }
-    &__text{
-        font-family: 'Rubik';
-        font-style: normal;
-        font-size: 14px;
-        color: #000000;
-        width: 200px;
-    }
-}
-.nav_con{
-    width: 1120px;
-    margin-left: 280px;
-}
-.cart{
-    width: 218px;
-    height: 72px;
-    background: #F8FAFD;
-    border-radius: 4px;
-    padding:  10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    &__title{
+// .box__button2{
 
-        font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 19px;
-color: #000000;
-    }
-    &__text{
-        font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 18px;
-color: #757881;
-    }
-    &__texts{
-        margin-top: 15px;
-    }
-   
-}
-.box{
-    background-color: #fff;
-    padding: 10px 40px;
-    border-radius: 8px;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    &__title{
-        height: 30px;
-        overflow: hidden;
-    }
-    &__button2{
-        color: #0D75FF;
-        background-color: #d7e6f9 ;
-    }
-    &__button3{
-        color: #fff;
-        width: 200px;
-    }
-    &__text{
-        color: #757881;
-        font-size: 14px;
-    }
-    &__year{
-        color: #757881;
-        font-size: 14px;
-    }
-    &__img{
-        margin-left: 30px;
-    }
-}
+// }

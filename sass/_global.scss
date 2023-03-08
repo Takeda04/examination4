@@ -6,7 +6,21 @@ body{
     margin: 0;
     padding: 0;
 }
+.containerMain{
+    width: 1200px;
+    margin: 0 auto;
+
+}
 .container__main{
     width: 1120px;
     margin-left: 280px;
+}
+li{
+    list-style: none;
+}
+#dataContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
